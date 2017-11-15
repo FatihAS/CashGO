@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">CashGo</string>
+
+    <!-- Menu -->
+    <string name="action_cart">Keranjang</string>
+
+    <!-- Promo -->
+    <string name="promo_name">Promo Name</string>
+    <string name="promo_store">Promo Store</string>
+
+    <!-- Error Message -->
+    <string name="err_msg_nameempty">Nama tidak boleh kosong</string>
+    <string name="err_msg_email">Format email salah</string>
+    <string name="err_msg_emailempty">Email tidak boleh kosong</string>
+    <string name="err_msg_password">Password tidak boleh kosong</string>
+    <string name="err_msg_min_password">Password minimal harus 8 karakter</string>
+    <string name="err_msg_phoneempty">Nomor telefon tidak boleh kosong</string>
+
+    <!-- Onboard -->
+    <string name="onboard">Onboard</string>
+    <string name="onboard_next">Selanjutnya</string>
+    <string name="onboard_finish">Selesai</string>
+
+    <string name="onboard_1_title">Onboard 1</string>
+    <string name="onboard_1_desc">Deskripsi Onboard</string>
+
+    <string name="onboard_2_title">Onboard 2</string>
+    <string name="onboard_2_desc">Deskripsi Onboard</string>
+
+    <string name="onboard_3_title">Onboard 3</string>
+    <string name="onboard_3_desc">Deskripsi Onboard</string>
+
+    <!-- Signin, Signup, Forgot password, Hint -->
+    <string name="signin">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="forgot_password">Lupa Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_phone">Nomor Telefon</string>
+    <string name="hint_name">Nama</string>
+    <string name="check_email">Cek Email mu</string>
+    <string name="check_email_desc">Kami baru saja mengirimkan link untuk melakukan reset password di email mu</string>
+
+    <!-- Profile -->
+    <string name="profile">Profil</string>
+    <string name="name_account">Nama Akun</string>
+    <string name="email_account">Email Akun</string>
+    <string name="phone_account">Nomor Telefon Akun</string>
+    <string name="edit_account">Ubah</string>
+    <string name="transaction_account">Transaksi</string>
+    <string name="history_account">Riwayat Pembelian</string>
+    <string name="service_account">Ketentuan Layanan</string>
+    <string name="privacy_police_account">Kebijakan Privasi</string>
+    <string name="signout_account">Keluar</string>
+
+    <!-- Scan -->
+    <string name="scan">Scan</string>
+    <string name="scan_result">Hasil Scan</string>
+    <string name="scan_name_result">Nama Barang</string>
+    <string name="scan_price_result">Harga</string>
+    <string name="scan_size_result">Ukuran</string>
+    <string name="scan_amount_result">Jumlah</string>
+    <string name="scan_another_result">Lihat Barang Lainnya</string>
+    <string name="scan_addcart_result">Tambah pada keranjang</string>
+    <string name="scan_hint_amount">Jumlah Barang</string>
+    <string name="size_s">S</string>
+    <string name="size_m">M</string>
+    <string name="size_l">L</string>
+    <string name="size_xl">XL</string>
+    <string-array name="size_result">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Xtra Large</item>
+    </string-array>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+
+    <!-- Transaction -->
+    <string name="transaction">Transaksi</string>
+    <string name="transaction_process">Dalam Proses</string>
+    <string name="transaction_done">Selesai</string>
+
+</resources>
