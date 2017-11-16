@@ -30,6 +30,17 @@
     <string name="onboard_3_title">Onboard 3</string>
     <string name="onboard_3_desc">Deskripsi Onboard</string>
 
+    <!-- String for barcode detector error -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <!-- QR Code Reader-->
+    <string name="qash_reader">Qash Reader</string>
+    <string name="scan_balance">Balance</string>
+    <string name="scan_ket">Description</string>
+
     <!-- Signin, Signup, Forgot password, Hint -->
     <string name="signin">Masuk</string>
     <string name="signup">Daftar</string>
