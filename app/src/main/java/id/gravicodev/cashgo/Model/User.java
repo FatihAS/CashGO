@@ -5,35 +5,19 @@ package id.gravicodev.cashgo.Model;
  */
 
 public class User {
-    public String fullname;
-    public String accountNumber;
+    public String nama;
     public String email;
-    private String userid;
-    private int balance;
+    public String nomor_telepon;
+    public String saldo;
 
-    public User(){
-
+    public User() {
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public User(String fullname, String accountNumber, String email){
-        this.fullname = fullname;
-        this.accountNumber = accountNumber;
+    public User(String nama, String email, String nomor_telepon, String saldo) {
+        this.nama = nama;
         this.email = email;
-    }
-
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
-
-    public int getBalance() {
-        return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
+        this.nomor_telepon = nomor_telepon;
+        this.saldo = saldo;
     }
 }

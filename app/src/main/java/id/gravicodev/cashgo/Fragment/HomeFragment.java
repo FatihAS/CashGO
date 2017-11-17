@@ -9,10 +9,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import id.gravicodev.cashgo.Adapter.PromoCardAdapter;
+import id.gravicodev.cashgo.Helper.FirebaseUtils;
+import id.gravicodev.cashgo.Helper.StaticHelper;
 import id.gravicodev.cashgo.Model.Promo;
 import id.gravicodev.cashgo.R;
 
@@ -59,4 +66,8 @@ public class HomeFragment extends Fragment {
 
         adapter.notifyDataSetChanged();
     }
+
+
+
+
 }
