@@ -9,33 +9,36 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import id.gravicodev.cashgo.Adapter.TabFragmentPagerAdapter;
 import id.gravicodev.cashgo.Helper.StaticHelper;
 import id.gravicodev.cashgo.R;
-import id.gravicodev.cashgo.Session.SessionManager;
 
 public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
+    private static HashMap<DatabaseReference, ValueEventListener> valueListenerList = new HashMap<>();
 
-    // Session Manager Class
-    SessionManager session;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Session class instance
-        session = new SessionManager(getApplicationContext());
-//        session.checkLogin();
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar_main);
         setSupportActionBar(toolbar);
 
@@ -172,5 +175,52 @@ public class MainActivity extends BaseActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public String moneyParserToInt(String data){
+        ArrayList<String> input = new ArrayList<>();
+        for(int i = data.length()-1;i>=0;i--){
+            if(!".".equals(String.valueOf(data.charAt(i)))){
+                input.add(String.valueOf(data.charAt(i)));
+            }
+        }
+
+        int hasil = 0;
+        int pengali = 1;
+
+        for(int i = 0; i < input.size(); i++){
+            hasil+= Integer.parseInt(input.get(i))*pengali;
+            pengali *=10;
+        }
+
+        return String.valueOf(hasil);
+    }
+
+    public String moneyParserString(String data){
+        ArrayList<String> input = new ArrayList<>();
+        for(int i = data.length()-1;i>=0;i--){
+            if(!".".equals(String.valueOf(data.charAt(i)))){
+                input.add(String.valueOf(data.charAt(i)));
+            }
+        }
+
+        String strHasil = "";
+        int x = 1;
+        for(int i=0; i < input.size();i++){
+            if(x==3 && i != (input.size()-1)){
+                strHasil = "." + input.get(i) + strHasil;
+                x = 0;
+            }else{
+                strHasil = input.get(i) + strHasil;
+            }
+            x++;
+        }
+
+        return strHasil;
+    }
+
+    // Method for adding value listener
+    public void addListener(DatabaseReference db, ValueEventListener value) {
+        this.valueListenerList.put(db,value);
     }
 }

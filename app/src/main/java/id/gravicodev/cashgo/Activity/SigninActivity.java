@@ -17,25 +17,22 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import id.gravicodev.cashgo.Helper.FirebaseUtils;
 import id.gravicodev.cashgo.Helper.StaticHelper;
 import id.gravicodev.cashgo.R;
-import id.gravicodev.cashgo.Session.SessionManager;
-import id.gravicodev.cashgo.Model.User;
 
 public class SigninActivity extends BaseActivity {
 
     private static final String TAG = "SigninActivity";
     private AppCompatEditText email_signin, password_signin;
 
-    private SessionManager sessionManager;
+
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
-    //SessionManager session;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
