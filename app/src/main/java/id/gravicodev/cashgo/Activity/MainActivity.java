@@ -12,21 +12,30 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import id.gravicodev.cashgo.Adapter.TabFragmentPagerAdapter;
+import id.gravicodev.cashgo.Helper.StaticHelper;
 import id.gravicodev.cashgo.R;
+import id.gravicodev.cashgo.Session.SessionManager;
 
 public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
+
+    // Session Manager Class
+    SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Session class instance
+        session = new SessionManager(getApplicationContext());
+//        session.checkLogin();
         Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar_main);
         setSupportActionBar(toolbar);
 
@@ -112,6 +121,8 @@ public class MainActivity extends BaseActivity {
                     new String[]{Manifest.permission.CAMERA},
                     1);
         }
+        StaticHelper sh = new StaticHelper();
+        Log.d("jancok",sh.uid);
     }
 
     @Override

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "333832146543",
+    "firebase_url": "https://cashgo-329fa.firebaseio.com",
+    "project_id": "cashgo-329fa",
+    "storage_bucket": "cashgo-329fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333832146543:android:5f3cf8a8dbe61d57",
+        "android_client_info": {
+          "package_name": "id.gravicodev.cashgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333832146543-hhsi8i214rb9ajgfs1ensrbc03g9696h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.gravicodev.cashgo",
+            "certificate_hash": "8d5705cefdb026c1b257ce90093ea0bde8a8393d"
+          }
+        },
+        {
+          "client_id": "333832146543-5l9hds65lsi9dvf550jojrmhk3vfsi7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdacmFjkZIadmVesaY_7kcyZelnFybWpk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333832146543-5l9hds65lsi9dvf550jojrmhk3vfsi7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
