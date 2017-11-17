@@ -27,6 +27,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Barcode.BarcodeCaptureActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".Activity.SigninActivity"
             android:screenOrientation="portrait" />
         <activity
