@@ -68,10 +68,6 @@ public final class BarcodeCaptureActivity extends AppCompatActivity
         balanceRead = (TextView) findViewById(R.id.balanceRead);
         descRead = (TextView) findViewById(R.id.descRead);
 
-        Intent intent = getIntent();
-        balanceRead.setText("Rp. "+intent.getStringExtra("balance"));
-        descRead.setText(intent.getStringExtra("description"));
-
         boolean autoFocus = true;
         boolean useFlash = false;
 
@@ -94,6 +90,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity
             finish();
         }
     }
+
+
 
     // Handles the requesting of the camera permission.
     private void requestCameraPermission() {
