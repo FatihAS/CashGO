@@ -92,5 +92,9 @@
     <string name="transaction">Transaksi</string>
     <string name="transaction_process">Dalam Proses</string>
     <string name="transaction_done">Selesai</string>
+    <string name="id">uid</string>
+    <string name="email">email</string>
+    <string name="fullname">fullname</string>
+    <string name="balanceacc">balanceacc</string>
 
 </resources>
